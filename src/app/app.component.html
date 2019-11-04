@@ -89,44 +89,77 @@
 				<!-- DataTables Example -->
 				<div class="card mb-3">
 					<div class="card-header">
-					
+
 						Informações detalhadas do Range ( OF ) </div>
 					<div class="card-body">
 						<div class="table-responsive">
-							<table class="darkTable" id="dataTable" width="100%" cellspacing="0">
+							<table class="dk2" id="dataTable" width="100%" cellspacing="0">
 								<thead>
 									<tr>
-										<th >Fase</th>
-										<th >Posto</th>
-                    <th >Descrição</th>
-                    </tr>
+										<th>Fase</th>
+										<th>Posto</th>
+										<th>Descrição</th>
+										<th>Horas planejadas</th>
+										<th>Horas trabalhadas</th>
+									</tr>
 								</thead>
 								<tbody>
-									<tr >
-										<td  rowspan="100%" align ="center"> Porta Pax Tras.</td>
+									<tr>
+										<td rowspan="100%"> Porta Pax Tras.</td>
 									</tr>
 									<tr>
-
 										<td>Estrutura</td>
+										<td>Montar estrutura</td>
+										<td>6h</td>
+										<td>5h</td>
+									</tr>
+									<tr>
 										<td>Furação</td>
+										<td>Fazer furação na fuselagem</td>
+										<td>7h</td>
+										<td>5h</td>
+									</tr>
+									<tr>
 										<td>cravação</td>
-									<td>Selagem</td>
-									<td>Pintura</td>
-                  <td>Em</td>
-
+										<td>cravar rebites</td>
+										<td>3h</td>
+										<td>1h</td>
 									</tr>
 									<tr>
-										<td>Ashton Cox</td>
-										<td>Junior Technical Author</td>
-										<td>San Francisco</td>
-										<td>$86,000</td>
+										<td>Selagem</td>
+										<td>Selar e aguardar processo de cura</td>
+										<td>12h</td>
+										<td>8h</td>
 									</tr>
 									<tr>
-										<td>Cedric Kelly</td>
-										<td>Senior Javascript Developer</td>
-										<td>Edinburgh</td>
-										<td>22</td>
-								
+										<td>Pintura</td>
+										<td>Pintar e aplicar composto conforme instrucao de trabalho</td>
+										<td>12h</td>
+										<td>10h</td>
+									</tr>
+									<tr>
+										<td>Mecanismos</td>
+										<td>Montar mecanismo conforme instrucao de trabalho</td>
+										<td>8h</td>
+										<td>7h</td>
+									</tr>
+									<tr>
+										<td>Final</td>
+										<td>Fazer Aplicação de Dinitrol </td>
+										<td>6h</td>
+										<td>4h</td>
+									</tr>
+									<tr>
+										<td>Embalagem</td>
+										<td>Embalar e entregar</td>
+										<td>2h</td>
+										<td>1h</td>
+									</tr>
+									<tr>
+										<td>Envio</td>
+										<td>Item disponivel para coleta</td>
+										<td>2h</td>
+										<td>1h</td>
 									</tr>
 
 
@@ -143,7 +176,17 @@
 						<i class="fas fa-chart-area"></i>
 						Area Chart Example</div>
 					<div class="card-body">
-						<canvas id="myAreaChart" width="100%" height="30"></canvas>
+						<div class="chartjs-size-monitor">
+							<div class="chartjs-size-monitor-expand">
+								<div class=""></div>
+							</div>
+							<div class="chartjs-size-monitor-shrink">
+								<div class=""></div>
+							</div>
+						</div>
+						<canvas id="myAreaChart" width="1454" height="436"
+							style="display: block; width: 1454px; height: 436px;"
+							class="chartjs-render-monitor"></canvas>
 					</div>
 					<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
 				</div>
@@ -165,6 +208,105 @@
 
 	</div>
 
+        <!-- Area Chart Example-->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-chart-area"></i>
+            Area Chart Example</div>
+          <div class="card-body">
+            <canvas id="myAreaChart" width="100%" height="30"></canvas>
+          </div>
+          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-bar"></i>
+                Bar Chart Example</div>
+              <div class="card-body">
+                <canvas id="myBarChart" width="100%" height="50"></canvas>
+              </div>
+              <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-pie"></i>
+                Pie Chart Example</div>
+              <div class="card-body">
+                <canvas id="myPieChart" width="100%" height="100"></canvas>
+              </div>
+              <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+            </div>
+          </div>
+        </div>
+
+        <p class="small text-center text-muted my-5">
+          <em>More chart examples coming soon...</em>
+        </p>
+
+      </div>
+      <!-- /.container-fluid -->
+
+      <!-- Sticky Footer -->
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright © Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.min.js"></script>
+
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-bar-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
 </body>
 
 </html>
