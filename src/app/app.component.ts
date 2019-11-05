@@ -1,16 +1,18 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component , ViewChild } from '@angular/core';
 import { Chart } from 'chart.js';
 
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: [ './app.component.css', '../css/sb-admin.min.css', '../css/sb-admin.css', '../css/darktable.css' ]
 })
-export class AppComponent {
-  name = 'Angular   6';
+export class AppComponent  {
+  name = 'Angular';
   canvas: any;
   ctx: any;
   @ViewChild('mychart') mychart;
+  
+
 
   ngAfterViewInit() {
     this.canvas = this.mychart.nativeElement; 
@@ -77,3 +79,5 @@ export class AppComponent {
     });
   }
 }
+
+
