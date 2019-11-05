@@ -7,12 +7,10 @@ import { Chart } from 'chart.js';
   styleUrls: [ './app.component.css', '../css/sb-admin.min.css', '../css/sb-admin.css', '../css/darktable.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  name = 'Angular   6';
   canvas: any;
   ctx: any;
   @ViewChild('mychart') mychart;
-  
-
 
   ngAfterViewInit() {
     this.canvas = this.mychart.nativeElement; 
