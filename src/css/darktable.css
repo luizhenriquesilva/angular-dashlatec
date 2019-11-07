@@ -3,7 +3,7 @@ table.darkTable {
   font-family: Arial, Helvetica, sans-serif;
   border: 2px solid #000000;
   background-color: #4A4A4A;
-  min-width: 200px;
+  min-width: 60%;
   overflow: hidden;
   
   border-collapse: collapse;

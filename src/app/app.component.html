@@ -31,19 +31,24 @@
 
 		<!-- Sidebar -->
 
-		<table class="darktable">
+		<table class="darkTable">
 			<thead>
 				<tr>
 					<th *ngFor="let item of listaH">
 						{{item}}</th>
 				</tr>
 			</thead>
-  			<tr data-href='url://link-for-first-row/'>
-				<td>{{listaP}}</td>
 
-				<tbody>
+			<tbody>
 
-				</tbody>
+				<tr *ngFor="let item of itemlista">
+					<td>{{item.descricao}}</td>
+					<td>{{item.range}}</td>
+					<td>{{item.linha}}</td>
+					<td>{{item.programa}}</td>
+				</tr>
+        
+			</tbody>
 
 		</table>
 

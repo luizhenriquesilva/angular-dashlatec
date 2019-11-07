@@ -16,8 +16,42 @@ export class AppComponent {
   canvas: any;
   ctx: any;
 
+
+
   listaH = ["Posto Atual", "Range", "Linha", "Programa"];
-  listaP = ["Estrutura","Furação","cravação","Selagem","Pintura","Mecanismos","Final","Embalagem","Envio"];
+  listaP = ["Estrutura", "Furação",    "cravação",    "Selagem",    "Pintura",    "Mecanismos",    "Final",    "Embalagem",   "Envio" ];
+
+  itemlista = [
+    {
+      "programa":"ELP",
+      "range": "1603",
+      "linha": "Porta Pax Dian.",
+      "descricao": "ESTRUTURA",
+      "datainicioplan": "null",
+      "datafimplan": "null",
+      "datainicioreal": "2019-08-29 07:30:00.000",
+      "datafimreal": "2019-09-06 10:00:00.000"
+    },
+    {
+      "programa":"CF-1",
+      "range": "1603",
+      "linha": "Porta Pax tras.",
+      "descricao": "Cravacao",
+      "datainicioplan": "null",
+      "datafimplan": "null",
+      "datainicioreal": "2019-08-29 07:30:00.000",
+      "datafimreal": "2019-09-06 10:00:00.000"
+    },    {
+      "programa":"CF-2",
+      "range": "1603",
+      "linha": "Porta Pax tras.",
+      "descricao": "Fuselagem",
+      "datainicioplan": "null",
+      "datafimplan": "null",
+      "datainicioreal": "2019-08-29 07:30:00.000",
+      "datafimreal": "2019-09-06 10:00:00.000"
+    }
+  ];
 
   // @ViewChild("mychart") mychart;
 
