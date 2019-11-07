@@ -81,21 +81,17 @@ export class AppComponent {
               scaleLabel: {
                 labelString: "Posto",
                 display: true
+                
               }
             }
           ],
-          yAxes: [
-            {
-              type: "linear",
-              ticks: {
-                userCallback: function(tick) {
-                  return tick.toString() + "m";
+          yAxes: [{
+                type: 'time',
+                
+                time: {
+                    unit: 'day'
                 }
-              },
-              scaleLabel: {
-                labelString: "Tempo",
-                display: true
-              }
+                
             }
           ]
         }

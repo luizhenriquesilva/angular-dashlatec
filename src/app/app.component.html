@@ -31,62 +31,143 @@
 
 		<!-- Sidebar -->
 
-		<ul>
+		<table class="dkf">
+			<thead>
+				<tr>
+					<th>Posto Atual</th>
+					<th>Programa</th>
+					<th>Range</th>
+					<th>Linha</th>
+				</tr>
+			</thead>
 
+		</table>
+
+
+
+
+
+		<ul>
 			<table class="darkTable">
+
 
 				<thead>
 					<tr>
+						<th>Programa</th>
 						<th>Range</th>
 						<th>Linha</th>
+						<th>Posto Atual</th>
 					</tr>
 				</thead>
 
 				<tbody>
 					<tr data-href='url://link-for-first-row/'>
+						<td rowspan="10">ELP</td>
 						<td>1603</td>
 						<td>Porta Pax Tras.</td>
+						<td>Selagem</td>
 					</tr>
 					<tr data-href='url://link-for-first-row/'>
 						<td>1603</td>
 						<td>Porta Pax Tras.</td>
+						<td> Estrutura </td>
 					</tr>
 					<tr data-href='url://link-for-first-row/'>
 						<td>1603</td>
 						<td>Porta Pax Tras.</td>
+						<td> Furação </td>
+					</tr>
+					<tr data-href='url://link-for-first-row/'>
+						<td bgcolor="#ffff00" style="font"> 1603</td>
+						<td bgcolor="#ffff00">Porta Pax Tras.</td>
+						<td bgcolor="#ffff00"> Cravção </td>
 					</tr>
 					<tr data-href='url://link-for-first-row/'>
 						<td>1603</td>
 						<td>Porta Pax Tras.</td>
+						<td> Embalagem </td>
+					</tr>
+					<tr data-href='url://some-other-link/'>
+						<td>0075</td>
+						<td>OW</td>
+						<td> Pintura </td>
+					</tr>
+					<tr data-href='url://some-other-link/'>
+						<td>0075</td>
+						<td>OW</td>
+						<td> Mecanismos </td>
+					</tr>
+					<tr data-href='url://some-other-link/'>
+						<td>0075</td>
+						<td>OW</td>
+						<td> Final </td>
+					</tr>
+					<tr data-href='url://some-other-link/'>
+						<td>0075</td>
+						<td>OW</td>
+						<td> Selagem</td>
+					</tr>
+					<tr data-href='url://some-other-link/'>
+						<td>0075</td>
+						<td>OW</td>
+						<td> cravação </td>
+					</tr>
+					<tr data-href='url://link-for-first-row/'>
+						<td rowspan="10">CF-1</td>
+						<td>1603</td>
+						<td>Porta Pax Tras.</td>
+						<td> Estrutura </td>
 					</tr>
 					<tr data-href='url://link-for-first-row/'>
 						<td>1603</td>
 						<td>Porta Pax Tras.</td>
+						<td> Pintura </td>
+					</tr>
+					<tr data-href='url://link-for-first-row/'>
+						<td>1603</td>
+						<td>Porta Pax Tras.</td>
+						<td> Estrutura </td>
+					</tr>
+					<tr data-href='url://link-for-first-row/'>
+						<td>1603</td>
+						<td>Porta Pax Tras.</td>
+						<td> Estrutura </td>
+					</tr>
+					<tr data-href='url://link-for-first-row/'>
+						<td>1603</td>
+						<td>Porta Pax Tras.</td>
+						<td> Pintura </td>
+
 					</tr>
 					<tr data-href='url://some-other-link/'>
 						<td>0075</td>
 						<td>OW</td>
+						<td> Selagem </td>
 					</tr>
 					<tr data-href='url://some-other-link/'>
 						<td>0075</td>
 						<td>OW</td>
+						<td> Embalagem </td>
 					</tr>
 					<tr data-href='url://some-other-link/'>
 						<td>0075</td>
 						<td>OW</td>
+						<td> Final </td>
+					</tr>
+					<tr data-href='url://some-other-link/'>
+						<td bgcolor="#2ef500">0075</td>
+						<td bgcolor="#2ef500">OW</td>
+						<td bgcolor="#2ef500"> Final </td>
 					</tr>
 					<tr data-href='url://some-other-link/'>
 						<td>0075</td>
 						<td>OW</td>
-					</tr>
-					<tr data-href='url://some-other-link/'>
-						<td>0075</td>
-						<td>OW</td>
+						<td> Final </td>
 					</tr>
 				</tbody>
 
-			</table>
 
+			</table>
 		</ul>
 
 
@@ -132,10 +213,10 @@
 										<td>5h</td>
 									</tr>
 									<tr>
-										<td>cravação</td>
-										<td>cravar rebites</td>
-										<td>3h</td>
-										<td>1h</td>
+										<td bgcolor="#2ef500">cravação</td>
+										<td bgcolor="#2ef500">cravar rebites</td>
+										<td bgcolor="#2ef500">3h</td>
+										<td bgcolor="#2ef500">1h</td>
 									</tr>
 									<tr>
 										<td>Selagem</td>
@@ -185,28 +266,7 @@
 				</div>
 
 				<!-- Area Chart Example-->
-				<div class="card mb-3">
-					<div class="card-header">
-						<i class="backchart"></i>
-						Efetividade produção</div>
-					<div class="card-body">
-								<div style="width:100%;">
-									<canvas id="myChart" width="700" height="250" #mychart></canvas>
-								</div>
-						<div class="chartjs-size-monitor">
-							<div class="backchart">
-								<div class=""></div>
 
-
-							</div>
-							<div class="chartjs-size-monitor-shrink">
-								<div class=""></div>
-							</div>
-						</div>
-
-					</div>
-					<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-				</div>
 
 
 				<footer class="sticky-footer">

@@ -115,6 +115,10 @@ background-color: aquamarine;
 background: aqua;
 
 }
+td.dkf:after[ data-bgcolor="#ffff00"] {
 
+color: blue;
+
+}
 
 
