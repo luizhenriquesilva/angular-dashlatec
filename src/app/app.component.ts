@@ -1,4 +1,4 @@
-import { Component, ViewChild } from "@angular/core";
+import { Directive, Component, ViewChild } from "@angular/core";
 import { Chart } from "chart.js";
 
 @Component({
@@ -15,8 +15,13 @@ export class AppComponent {
   name = "Angular   6";
   canvas: any;
   ctx: any;
-  @ViewChild("mychart") mychart;
 
+  listaH = ["Posto Atual", "Range", "Linha", "Programa"];
+  listaP = ["Estrutura","Furação","cravação","Selagem","Pintura","Mecanismos","Final","Embalagem","Envio"];
+
+  // @ViewChild("mychart") mychart;
+
+  /*
   ngAfterViewInit() {
     this.canvas = this.mychart.nativeElement;
     this.ctx = this.canvas.getContext("2d");
@@ -81,21 +86,21 @@ export class AppComponent {
               scaleLabel: {
                 labelString: "Posto",
                 display: true
-                
               }
             }
           ],
-          yAxes: [{
-                type: 'time',
-                
-                time: {
-                    unit: 'day'
-                }
-                
+          yAxes: [
+            {
+              type: "time",
+
+              time: {
+                unit: "day"
+              }
             }
           ]
         }
       }
     });
   }
+    */
 }

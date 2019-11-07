@@ -31,15 +31,19 @@
 
 		<!-- Sidebar -->
 
-		<table class="dkf">
+		<table class="darktable">
 			<thead>
 				<tr>
-					<th>Posto Atual</th>
-					<th>Programa</th>
-					<th>Range</th>
-					<th>Linha</th>
+					<th *ngFor="let item of listaH">
+						{{item}}</th>
 				</tr>
 			</thead>
+  			<tr data-href='url://link-for-first-row/'>
+				<td>{{listaP}}</td>
+
+				<tbody>
+
+				</tbody>
 
 		</table>
 
@@ -47,7 +51,7 @@
 
 
 
-		<ul>
+		<!--
 			<table class="darkTable">
 
 
@@ -168,11 +172,12 @@
 
 
 			</table>
-		</ul>
+		
 
 
 
 
+        -->
 		<div id="content-wrapper">
 
 			<div class="container-fluid">
@@ -264,10 +269,9 @@
 
 					</div>
 				</div>
-
 				<!-- Area Chart Example-->
 
-
+				<!-- 
 
 				<footer class="sticky-footer">
 					<div class="container my-auto">
@@ -277,9 +281,9 @@
 					</div>
 				</footer>
 
+	  			                                                       -->
 			</div>
 			<!-- /.container-fluid -->
-
 
 		</div>
 
